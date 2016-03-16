@@ -7,14 +7,14 @@ keywords: Blog,Build
 ---
 
 
-> 从svn到git，在网上看了很多资料，都说学习不如实践来的快，推荐建立一个GitHub的博客，在实践中学习。
+> 从svn到git，在网上看了很多资料，都说学习不如实践来的快，推荐建立一个GitHub Pages的博客，在实践中学习。
 > 第一次建立博客，使用的是[闫肃](http://yansu.org/)的博客主题。
 
 ## Blog 简介
 
 第一次建立博客，百度参考了很多文章，春节回来上班的时候就开始学习git的一些命令。
 
-开始尝试搭建博客，参考了阮一峰大大的[博客入门指南](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)。只是当时对git的命令和流程一知半解，总是上传不成功，工作上有开始有了繁重的任务，于是半途而废。
+开始尝试搭建博客，参考了阮一峰大大的[博客入门指南](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)。只是当时对git的命令和流程一知半解，总是上传不成功，工作上有开始有了繁重的任务，于是半途而废。另一篇有参考性的文章是ITeye里面的[使用Github Pages建独立博客](http://justcoding.iteye.com/blog/1959737).
 
 一段时间的繁忙后又有闲暇，于是继续未完成的博客之路。继续依靠着强大的搜索引擎，找到了几篇好文。其中isnowfy的[用静态页面生成静态博客](http://isnowfy.github.io/about-simple-cn.html)很简洁易懂，立刻就可以上手还能在页面上直接编辑，于是依葫芦画瓢建立了一个简陋的博客。又觉页面太简，想要做一个页面效果更好一些的个人博客。再转而从知乎里挖掘了知友推荐的博客。
 
