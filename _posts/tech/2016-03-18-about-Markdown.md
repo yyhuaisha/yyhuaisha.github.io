@@ -6,9 +6,6 @@ tags: Essay
 keywords: Markdown,Editor
 ---
 
-
-#关于Markdown
-
 ###Markdown编辑器
 
 [好用的Markdown编辑器一览](http://www.williamlong.info/archives/4319.html)
@@ -25,4 +22,5 @@ keywords: Markdown,Editor
 ---------
 
 ###关于图片上传的问题
+
 图片上传的这一块，有人说直接上传到博客源文件的image目录下面。也有人把图片上传到七牛，百度云等云空间。我是更倾向于使用后者。把图片上传到腾讯微云，一方面生活中打开电脑QQ基本上是必上的，用腾讯的同类产品关联起来比较简便，而且图片可视化便于管理。专门建立一个文件夹用于存放博文的图片，需要使用的时候直接分享出来就可以生成链接了。
