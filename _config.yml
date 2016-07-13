@@ -22,7 +22,7 @@ github: yyhuaisha
 # avatar: http://img.mukewang.com/56ea14af000163bd06400639-200-200.jpg
 # favicon: http://img.mukewang.com/user/56ea14af000163bd06400639-40-40.jpg
 avatar: https://avatars3.githubusercontent.com/u/13938131?v=3&s=200
-favicon: https://avatars2.githubusercontent.com/u/13938131?v=3&s=40
+favicon: /favicon.png
 
 # disqus 设置
 disqus:
