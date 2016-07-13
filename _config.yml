@@ -5,11 +5,10 @@ description: > # this means to ignore newlines until "baseurl:"
   一叶怀沙的博客
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yyhuaisha.github.io" # the base hostname & protocol for your site
-rss_url: /pages/feed.xml
 
 # Sidebar filter
 # Choose 'tag' or 'category' as filter in sidebar.
-filter: 'category'
+filter: 'tag'
 
 # Social account
 twitter: yyhuaisha
@@ -34,8 +33,9 @@ ga:
   url: yyhuaisha.github.io
 
 # Build settings
-permalink: /:year/:month/:day/:title.html
 markdown: kramdown
 highlighter: rouge
 sass:
   style: compressed
+gems:
+  - jekyll-sitemap
