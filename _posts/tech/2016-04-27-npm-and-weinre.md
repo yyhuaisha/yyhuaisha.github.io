@@ -18,6 +18,7 @@ npm
 镜像使用方法（建议使用第4种，将配置写死，下次用的时候配置还在）:
 
 ##### 1.通过config命令指向国内镜像源
+
 ``` python
 npm config set registry https://registry.npm.taobao.org 
 npm info underscore   //如果上面配置正确这个命令会有字符串response
@@ -25,24 +26,28 @@ npm info underscore   //如果上面配置正确这个命令会有字符串respo
 
 
 ##### 2.命令行指定下载源
+
 ``` python
 https://registry.npm.taobao.org info underscore 
 ```
 
 
 ##### 3.通过cnpm
-使用
+使用 
+
 ``` python
-npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm install -g cnpm --registry=https://registry.npm.taobao.org 
 ```
 
 
 ##### 4.在配置文件 ~/.npmrc 文件写入源地址
+
 ``` python
-registry = https://registry.npm.taobao.org
+registry = https://registry.npm.taobao.org 
 ```
 
 配置后壳通过以下指令判断是否配置成功：
+
 ``` python
 npm config get registry // 或npm info express
 ```
@@ -90,6 +95,7 @@ Android平台UC浏览器开发者版，远程调试支持USB连接、Wi-Fi连接
 
 ##### 3.1 安装
 通过NPM来安装 weinre，命令行输入：
+
 ``` python
 npm -g install weinre
 ```
@@ -97,12 +103,14 @@ npm -g install weinre
 
 ##### 3.2 启动
 命令行输入：
+
 ``` python 
 weinre -httpPort 8081 -boundHost -all-
 ```
 
 
 ##### 3.3 添加脚本
+
 ``` python
 <script src="http://你的IP地址:8081/target/target-script-min.js#anonymous"></script>  //将此脚本加入要调试的页面中
 ```
