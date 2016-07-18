@@ -8,10 +8,12 @@ keywords: Npm,Weinre
 
 ### npm与换源
 npm
+
 全称Node Package Manager，是node.js的模块依赖管理工具。由于npm的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。
 常用的npm源主要有 
 
 > 1.http://www.cnpmjs.org/;
+
 > 2.http://npm.taobao.org/。
 
 以下操作以淘宝npm为例。
@@ -59,7 +61,7 @@ npm config get registry // 或npm info express
 以下提供几种解决的方法：
 
 
-####1.移动端安装谷歌浏览器
+#### 1.移动端安装谷歌浏览器
 
 
 ##### 1.1 准备
@@ -74,7 +76,7 @@ USB设置 在你的手机里打开"设置"->"开发人员工具"->"USB调试" �
 打开电脑的chrome 在地址栏输入 chrome://inspect 选中 Discover USB devices 可以检测到你的设备，勾选。打开手机上的chrome，也可以通过PC端chrome的 inspect里chrome后面那个输入框直接打开某个链接。可以点击弹出的审查元素框右上角的方形小图标切换到视图模式 这时会把你手机打开的页面拉到pc上显示。
 
 
-####2.安装UC浏览器开发者版
+#### 2.安装UC浏览器开发者版
 
 ##### 2.1 准备
 下载Android平台的UC浏览器开发者版，安装到手机中；PC机一台，并在PC上安装Chrome或Safari（推荐使用Chrome）。支持Chrome15–Chrome21，以及Safari5.1.4以上版本。
@@ -95,7 +97,7 @@ Android平台UC浏览器开发者版，远程调试支持USB连接、Wi-Fi连接
 
 更多内容请参考[UC浏览器开发者版使用手册(Android平台).pdf](http://plus.uc.cn/attachment/459)
 
-####3. Weinre （[参考](http://www.cnblogs.com/yuzhongwusan/p/4277453.html)）
+#### 3. Weinre （[参考](http://www.cnblogs.com/yuzhongwusan/p/4277453.html)）
 
 ##### 3.1 安装
 通过NPM来安装 weinre，命令行输入：
