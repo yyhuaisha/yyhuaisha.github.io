@@ -9,7 +9,8 @@ keywords: Npm,Weinre
 ### npm与换源
 npm
 全称Node Package Manager，是node.js的模块依赖管理工具。由于npm的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。
-常用的npm源主要有
+常用的npm源主要有 
+
 > 1.http://www.cnpmjs.org/;
 > 2.http://npm.taobao.org/。
 
@@ -56,7 +57,10 @@ npm config get registry // 或npm info express
 ### 移动端web开发远程实时调试
 调试前端页面一直使用着神器 Chrome开发人员工具。但当我们要调试移动设备的Web页面时,就感觉有点力不从心了。平时开发时我们可以一直都是在桌面调试这个页面, 但最终的运行环境是移动设备, 最终还是要在手机上验证一下, 这个时候各种兼容性问题就有可能接踵而来。我们使用技术将手机网页调试信息分离，实现一种能在大屏幕、高配置PC上来调试小屏幕、低配置的手机浏览器访问的网页的开发工具——RemoteInspector（简称RI）。
 以下提供几种解决的方法：
+
+
 ####1.移动端安装谷歌浏览器
+
 
 ##### 1.1 准备
 PC端安装最新的chrome，手机端安装最新的chrome ( Android机 )。
