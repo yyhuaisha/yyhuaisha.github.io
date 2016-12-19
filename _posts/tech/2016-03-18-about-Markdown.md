@@ -2,7 +2,7 @@
 layout: post
 title: 关于Markdown
 category: 技术
-tags: Essay
+tags: Markdown
 keywords: Markdown,Editor
 ---
 
