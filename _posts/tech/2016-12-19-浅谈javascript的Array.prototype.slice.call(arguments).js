@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 关于Markdown
+title: 浅谈javascript的Array.prototype.slice.call(arguments)
 category: 技术
 tags: Array
-keywords: Markdown,Editor
+keywords: Array,slice
 ---
 
-###  Array.prototype.slice.call(arguments)
+###  浅谈javascript的Array.prototype.slice.call(arguments)
 
 能将具有length属性的对象转成数组，除了IE下的节点集合（因为ie下的dom对象是以com对象的形式实现的，js对象与com对象不能进行转换）
 
