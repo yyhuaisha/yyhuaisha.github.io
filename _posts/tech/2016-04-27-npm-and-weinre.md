@@ -2,7 +2,7 @@
 layout: post
 title: Npm 与 移动端web开发调试
 category: 技术
-tags: Essay
+tags: tech
 keywords: Npm,Weinre
 ---
 

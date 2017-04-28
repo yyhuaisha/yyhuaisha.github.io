@@ -2,7 +2,7 @@
 layout: post
 title: textContent VS innerText
 category: 技术
-tags: Function
+tags: tech
 keywords: textContent,innerText
 ---
 
