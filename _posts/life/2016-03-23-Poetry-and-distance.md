@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  生活不只是眼前的苟且，还有诗和远方
-category: 生活
-tags: Essay
+category: Essay
+tags: 生活
 keywords: Poetry ,Distance
 ---
 

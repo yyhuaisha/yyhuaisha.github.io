@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 我的博客建立啦
-category: 生活
-tags: Essay
+category: Essay
+tags: 生活
 keywords: Blog,Build
 ---
 

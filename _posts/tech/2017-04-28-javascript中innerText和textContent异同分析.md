@@ -1,8 +1,8 @@
 ---
 layout: post
 title: textContent VS innerText
-category: 技术
-tags: tech
+category: tech
+tags: 技术
 keywords: textContent,innerText
 ---
 

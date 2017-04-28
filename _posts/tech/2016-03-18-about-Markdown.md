@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 关于Markdown
-category: 技术
-tags: tech
+category: tech
+tags: 技术
 keywords: Markdown,Editor
 ---
 

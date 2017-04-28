@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 浅谈javascript的Array.prototype.slice.call(arguments)
-category: 技术
-tags: tech
+category: tech
+tags: 技术
 keywords: Array,slice
 ---
 
