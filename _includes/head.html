@@ -6,6 +6,9 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  
+  <!-- 自动将http的不安全请求升级为https -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
