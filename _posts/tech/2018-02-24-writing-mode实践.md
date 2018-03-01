@@ -16,11 +16,11 @@ writing-mode: lr-tb;    /* 从左向右，从上往下 */
 writing-mode: tb-rl;    /* 从上往下，从右向左 */
 ```
 在移动端浏览器中，以上属性表现一直如常，数字和英文也完美地“躺着”显示。
-![Alt text](/2018-02-24/1.png)
+![Alt text](/picture/2018-02-24/1.png)
 
 
 
-但是使用**html2canvas**实现浏览器截图，使用了**writing-mode**非默认属性的时候，数字和英文无法由上而下排布，还是横版的排版。如下：![Alt text](/2018-02-24/2.png)
+但是使用**html2canvas**实现浏览器截图，使用了**writing-mode**非默认属性的时候，数字和英文无法由上而下排布，还是横版的排版。如下：![Alt text](/picture/2018-02-24/2.png)
 
 
 
@@ -32,12 +32,12 @@ writing-mode: tb-rl;    /* 从上往下，从右向左 */
 
 
 完美？Are you sure?
-![Alt text](/2018-02-24/3.png)
+![Alt text](/picture/2018-02-24/3.png)
 
 
 看起来是挺正常的，紧接着**html2canvas**一渲染。
 
-![Alt text](/2018-02-24/4.png)
+![Alt text](/picture/2018-02-24/4.png)
 
 怎么回事？长得不一样啊，渲染出来的dom会发生偏移。
 
@@ -45,7 +45,7 @@ writing-mode: tb-rl;    /* 从上往下，从右向左 */
 
 截图看了看渲染前后的变化，不是span的位置变化了，是文本部分的“**你好，**”，因为没有被标签包裹着，所以发生了偏移，向左边移动了几个像素。
 
-![Alt text](/2018-02-24/5.png)
+![Alt text](/picture/2018-02-24/5.png)
 
 都是**html2canvas**的锅，对**writing-mode**解析有偏差。我还能怎么样，当然是选择原谅它。（不原谅的话据说可以选用 **phantomjs** 代替它，当然我还没用过）
 
@@ -61,7 +61,7 @@ writing-mode: tb-rl;    /* 从上往下，从右向左 */
 </span>
 ```
 
-![Alt text](/2018-02-24/6.png)
+![Alt text](/picture/2018-02-24/6.png)
 
 
 这时候的显示比较正常了，再控制一下标点符号的** ine-height**就好了。
