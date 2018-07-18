@@ -10,14 +10,14 @@ keywords: antd-pro electron
 
 最近准备将 antd pro 的项目迁移到 electron，找了两天资料终于有点头绪。
 
-#####一、首先你要有一个完整的 antd pro 的项目，然后进入项目目录安装依赖
+##### 一、首先你要有一个完整的 antd pro 的项目，然后进入项目目录安装依赖
 
 ```python
 # 安装依赖包并运行
 npm install -save electron
 ```
 
-#####二、配置 main.js
+##### 二、配置 main.js
 项目根目录下面新建 main.js 文件
 
 ```python
@@ -77,7 +77,7 @@ app.on('activate', () => {
 
 要注意“加载应用”这里你的端口号要一致。
 
-#####三、配置你的 package.json ，添加以下项
+##### 三、配置你的 package.json ，添加以下项
 
 ```python
 {
@@ -93,7 +93,7 @@ app.on('activate', () => {
 
 注意根据你自己原本的项目的基础上来配置。
 
-#####四、还有重要的一点需要修改 webpack
+##### 四、还有重要的一点需要修改 webpack
 在 antd pro 我修改的是 .babelrc.js，添加 target: 'electron-renderer'。
 
 以下是我的 .babelrc.js 配置
@@ -116,7 +116,7 @@ module.exports = {
 
 注意根据你自己原本的项目的基础上来配置。
 
-#####五、启动
+##### 五、启动
 
 ```python
 # 启动react项目
