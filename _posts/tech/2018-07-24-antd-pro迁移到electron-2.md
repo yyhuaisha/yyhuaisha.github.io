@@ -14,7 +14,7 @@ keywords: antd-pro electron
 
 ```python
 # 安装依赖包并运行
-  npm install --save-dev electron-builder
+npm install --save-dev electron-builder
 ```
 
 也有用 electron-packager 进行打包的，两者配置方面有所不同，electron-builder 可以实现自动更新。
@@ -27,12 +27,12 @@ keywords: antd-pro electron
 我的 antd pro 项目 默认 build 到 dist 文件夹下，所以修改 mainWindow.loadURL 配置如下
 
 ```python
-  const startUrl = url.format({
-    pathname: path.join(__dirname, './dist/index.html'),
-    protocol: 'file:',
-    slashes: true,
-  });
-  mainWindow.loadURL(startUrl);
+const startUrl = url.format({
+  pathname: path.join(__dirname, './dist/index.html'),
+  protocol: 'file:',
+  slashes: true,
+});
+mainWindow.loadURL(startUrl);
 ```
 
 #### 三、electron-builder 的 package.json 配置
@@ -57,51 +57,51 @@ build 与 scripts、devDependencies 同级，scripts 根据自己实际需求添
 [https://www.electron.build/configuration/configuration#configuration](https://www.electron.build/configuration/configuration#configuration)
 
 ```python
-  "scripts": {
-    "electron-start": "electron .",
-    "start": "cross-env ESLINT=none roadhog dev",
-    "build": "cross-env API_ENV=production ESLINT=none roadhog build",
-    "package-all": "electron-builder -mwl",
-    "package-build-mac": "npm run build && electron-builder --mac",
-    "package-mac": "electron-builder --mac"
+"scripts": {
+  "electron-start": "electron .",
+  "start": "cross-env ESLINT=none roadhog dev",
+  "build": "cross-env API_ENV=production ESLINT=none roadhog build",
+  "package-all": "electron-builder -mwl",
+  "package-build-mac": "npm run build && electron-builder --mac",
+  "package-mac": "electron-builder --mac"
+},
+"build": {
+  "asar": false,
+  "productName": "myName",
+  "appId": "com.xxx.xxx",
+  "extends": null,
+  "files": ["dist", "node_modules/", "main.js", "package.json"],
+  "mac": {
+    "target": ["dmg", "zip"]
   },
-  "build": {
-    "asar": false,
-    "productName": "myName",
-    "appId": "com.xxx.xxx",
-    "extends": null,
-    "files": ["dist", "node_modules/", "main.js", "package.json"],
-    "mac": {
-      "target": ["dmg", "zip"]
-    },
-    "dmg": {
-      "contents": [
-        {
-          "x": 130,
-          "y": 220
-        },
-        {
-          "x": 410,
-          "y": 220,
-          "type": "link",
-          "path": "/Applications"
-        }
-      ]
-    },
-    "win": {
-      "target": ["nsis", "zip"]
-    },
-    "directories": {
-      "app": "./",
-      "buildResources": "./build",
-      "output": "./packages"
-    },
-    "compression": "normal",
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true
-    }
+  "dmg": {
+    "contents": [
+      {
+        "x": 130,
+        "y": 220
+      },
+      {
+        "x": 410,
+        "y": 220,
+        "type": "link",
+        "path": "/Applications"
+      }
+    ]
   },
+  "win": {
+    "target": ["nsis", "zip"]
+  },
+  "directories": {
+    "app": "./",
+    "buildResources": "./build",
+    "output": "./packages"
+  },
+  "compression": "normal",
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  }
+},
 ```
 
 #### 四、其他注意事项
@@ -111,23 +111,23 @@ build 与 scripts、devDependencies 同级，scripts 根据自己实际需求添
 2.假如你配置的
 
 ```python
-  "homepage": "./",
+"homepage": "./",
 ```
 
 不生效, 导致 build 后读取不到静态资源文件 css,js 等，可以考虑修改 `.webpackrc` 下面的
 
 ```python
-  publicPath: process.env.API_ENV === 'production' ? './' : '/',
+publicPath: process.env.API_ENV === 'production' ? './' : '/',
 ```
 
 3.我们通常写的 JS 代码里面直接 require electron 是有问题的，可以通过如下方法解决：
 (参考：[https://github.com/electron/electron/issues/7300](https://github.com/electron/electron/issues/7300))
 
 ```python
-  const electron = window.require("electron");
-  const ipcRenderer = electron.ipcRenderer;
+const electron = window.require("electron");
+const ipcRenderer = electron.ipcRenderer;
 
-  const fs = electron.remote.require("fs");
-  // or
-  const fs = window.require('fs');
+const fs = electron.remote.require("fs");
+// or
+const fs = window.require('fs');
 ```
