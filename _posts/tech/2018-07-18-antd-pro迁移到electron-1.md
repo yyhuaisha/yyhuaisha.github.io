@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 从antd-pro 迁移到 electron
+title: 从antd-pro 迁移到 electron（1.开发篇）
 category: tech
 tags: 技术
 keywords: antd-pro electron
 ---
 
-### antd-pro 迁移到 electron
+### antd-pro 迁移到 electron —— 开发篇
 
 最近准备将 antd pro 的项目迁移到 electron，找了两天资料终于有点头绪。
 
@@ -18,6 +18,7 @@ npm install -save electron
 ```
 
 #### 二、配置 main.js
+
 项目根目录下面新建 main.js 文件
 
 ```python
@@ -94,6 +95,7 @@ app.on('activate', () => {
 注意根据你自己原本的项目的基础上来配置。
 
 #### 四、还有重要的一点需要修改 webpack
+
 在 antd pro 我修改的是 .babelrc.js，添加 target: 'electron-renderer'。
 
 以下是我的 .babelrc.js 配置
