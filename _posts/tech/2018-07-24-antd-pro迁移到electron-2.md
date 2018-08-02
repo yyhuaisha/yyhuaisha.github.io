@@ -93,7 +93,7 @@ build 与 scripts、devDependencies 同级，scripts 根据自己实际需求添
   },
   "directories": {
     "app": "./",
-    "buildResources": "./build",
+    "buildResources": "resources",
     "output": "./packages"
   },
   "compression": "normal",
@@ -131,3 +131,28 @@ const fs = electron.remote.require("fs");
 // or
 const fs = window.require('fs');
 ```
+
+4.mac 下面生成 .icns 文件（mac 下 Application 的图标）
+在 resources 目录下面，新建一个 icons 的文件夹，然后给文件夹添加 .iconset 后缀。
+文件夹里面文件命名及大小如下：
+
+```python
+icon_16x16.png  
+icon_16x16@2x.png  
+icon_32x32.png  
+icon_32x32@2x.png  
+icon_128x128.png  
+icon_128x128@2x.png  
+icon_256x256.png  
+icon_256x256@2x.png  
+icon_512x512.png  
+icon_512x512@2x.png
+```
+
+然后打开终端，切换到 resources 目录下，执行以下命令
+
+```python
+iconutil -c icns icons.iconset -o icon.icns
+```
+
+就会生成一个 icon.icns 的文件
